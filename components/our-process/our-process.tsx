@@ -11,7 +11,7 @@ export const OurProcess = () => (
           NEXT LEVEL WEBSITE DESIGN IN PHILADELPHIA
         </h2>
         <p className="text-center text-lg text-pastelblue">
-          United Of Web is a global multidisciplinary design company. We bring a
+          WebSpark Innovations is a global multidisciplinary design company. We bring a
           deep tech approach to design.
         </p>
         <TextGradientLines />
