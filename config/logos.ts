@@ -10,34 +10,34 @@ import wordpress from '@/assets/logos/wordpress.png';
 export const LOGOS = [
   {
     src: next,
-    alt: 'Next.js Technology Logo',
+    alt: 'Next.js Technology Logo'
   },
   {
     src: wordpress,
-    alt: 'WordPress Technology Logo',
+    alt: 'WordPress Technology Logo'
   },
   {
     src: aws,
-    alt: 'AWS Technology Logo',
+    alt: 'AWS Technology Logo'
   },
   {
     src: hubspot,
-    alt: 'HubSpot Technology Logo',
+    alt: 'HubSpot Technology Logo'
   },
   {
     src: mysql,
-    alt: 'MySQL Technology Logo',
+    alt: 'MySQL Technology Logo'
   },
   {
     src: react,
-    alt: 'React Technology Logo',
+    alt: 'React Technology Logo'
   },
   {
     src: tailwind,
-    alt: 'Tailwind CSS Technology Logo',
+    alt: 'Tailwind CSS Technology Logo'
   },
   {
     src: framer,
-    alt: 'Framer Technology Logo',
-  },
+    alt: 'Framer Technology Logo'
+  }
 ];

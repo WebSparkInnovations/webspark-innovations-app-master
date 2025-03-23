@@ -19,20 +19,18 @@ export const AboutWelcome = () => (
         opacity: 1,
         translateY: 0,
         scale: [1, 0.9, 0.85, 0.8, 0.75],
-        transitionEnd: { rotateX: 0, scale: 1 },
+        transitionEnd: { rotateX: 0, scale: 1 }
       }}
       transition={{ duration: 8 }}
       className="z-10 max-w-screen-xl space-y-10 text-center transition-all"
     >
-      <h1
-        className={cn(
-          'text-4xl !leading-[1.2] text-regalblue-100 md:text-8xl',
-          starjhol.className
-        )}
-      >
+      <h1 className={cn('text-4xl !leading-[1.2] text-regalblue-100 md:text-8xl', starjhol.className)}>
         Welcome to WebSpark innovations
       </h1>
-      <TextGenerateEffect words={words} className={starjedi.className} />
+      <TextGenerateEffect
+        words={words}
+        className={starjedi.className}
+      />
     </motion.section>
     <SparklesCore
       particleDensity={5}

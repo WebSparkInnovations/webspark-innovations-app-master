@@ -3,10 +3,7 @@
 import { LogoScrollOpacityWrapperT } from '@/types/logo-scroll-opacity-wrapper';
 import { motion, useScroll, useTransform } from 'framer-motion';
 
-export function LogoScrollOpacityWrapper({
-  children,
-  increasing_on_scroll,
-}: LogoScrollOpacityWrapperT) {
+export function LogoScrollOpacityWrapper({ children, increasing_on_scroll }: LogoScrollOpacityWrapperT) {
   const { scrollY } = useScroll();
 
   const increasingOpacity = useTransform(scrollY, [100, 250], [0, 1]);
@@ -15,7 +12,7 @@ export function LogoScrollOpacityWrapper({
   return (
     <motion.div
       style={{
-        opacity: increasing_on_scroll ? increasingOpacity : decreasingOpacity,
+        opacity: increasing_on_scroll ? increasingOpacity : decreasingOpacity
       }}
       className="absolute h-full w-full overflow-visible"
     >

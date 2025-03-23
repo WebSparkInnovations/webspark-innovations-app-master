@@ -1,13 +1,6 @@
 'use client';
 
-import {
-  Form,
-  FormControl,
-  FormField,
-  FormItem,
-  FormLabel,
-  FormMessage,
-} from '@/components/ui/form';
+import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
 import { ContactFormSchema, ContactFormSchemaT } from '@/schemas';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { SubmitHandler, useForm } from 'react-hook-form';
@@ -39,29 +32,18 @@ export function ContactForm({ className, title = 'Contact Us' }: ContactFormT) {
       user_name: '',
       user_email: '',
       user_phone: '',
-      message: '',
-    },
+      message: ''
+    }
   });
 
-  const onSubmit: SubmitHandler<ContactFormSchemaT> = async data => {
+  const onSubmit: SubmitHandler<ContactFormSchemaT> = async (data) => {
     setError(undefined);
     setSuccess(undefined);
     const validateFields = ContactFormSchema.safeParse(data);
-    if (
-      formRef.current &&
-      validateFields &&
-      EMAILJS_SERVICE_ID &&
-      EMAILJS_TEMPLATE_ID &&
-      EMAILJS_PUBLIC_KEY
-    ) {
+    if (formRef.current && validateFields && EMAILJS_SERVICE_ID && EMAILJS_TEMPLATE_ID && EMAILJS_PUBLIC_KEY) {
       setIsPending(true);
       try {
-        await emailjs.sendForm(
-          EMAILJS_SERVICE_ID,
-          EMAILJS_TEMPLATE_ID,
-          formRef.current,
-          EMAILJS_PUBLIC_KEY
-        );
+        await emailjs.sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, formRef.current, EMAILJS_PUBLIC_KEY);
         setSuccess('Email Sent Successfully!');
       } catch (err) {
         console.error(err);
@@ -77,15 +59,10 @@ export function ContactForm({ className, title = 'Contact Us' }: ContactFormT) {
       <form
         ref={formRef}
         onSubmit={form.handleSubmit(onSubmit)}
-        className={cn(
-          'rounded-md border border-[#13244a] bg-transparent px-8 py-8',
-          className
-        )}
+        className={cn('rounded-md border border-[#13244a] bg-transparent px-8 py-8', className)}
       >
         <MaxWidthWrapper className="flex max-w-screen-lg flex-col gap-10 !p-0 font-bold">
-          <h1 className="text-center text-4xl uppercase lg:text-5xl">
-            {title}
-          </h1>
+          <h1 className="text-center text-4xl uppercase lg:text-5xl">{title}</h1>
           <FormField
             control={form.control}
             name="user_name"

@@ -13,7 +13,7 @@ export const ExpandingHeader = ({
   fadeIn = true,
   fadeOut = true,
   className,
-  id,
+  id
 }: ExpandingHeaderT) => (
   <motion.header
     initial={{ height: 0 }}
@@ -35,6 +35,9 @@ export const ExpandingHeader = ({
       {children}
       <TextGradientLines />
     </motion.div>
-    <BlurFade fadeIn={fadeIn} fadeOut={fadeOut} />
+    <BlurFade
+      fadeIn={fadeIn}
+      fadeOut={fadeOut}
+    />
   </motion.header>
 );

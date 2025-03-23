@@ -8,19 +8,16 @@ import { IoIosArrowDown } from 'react-icons/io';
 import { ScrollIntoViewLink } from '../navbar/scroll-into-view-link';
 import { MobileDropdownItems } from './mobile-dropdown-items';
 
-export function MobileDrowdown({
-  elementId,
-  featured,
-  href,
-  title,
-  setIsModalOpen,
-}: MobileDropdownT) {
+export function MobileDrowdown({ elementId, featured, href, title, setIsModalOpen }: MobileDropdownT) {
   const [dropdownOpen, setDropdownOpen] = useState<boolean>(false);
   const ref = useRef<HTMLLIElement | null>(null);
   useOnClickOutside(ref, () => setDropdownOpen(false));
 
   return (
-    <li ref={ref} className="flex flex-col items-center justify-center gap-3">
+    <li
+      ref={ref}
+      className="flex flex-col items-center justify-center gap-3"
+    >
       <div className="-my-4 flex items-center gap-2">
         <ScrollIntoViewLink
           title={title}
@@ -33,7 +30,7 @@ export function MobileDrowdown({
           <IoIosArrowDown
             className="cursor-pointer"
             size={23}
-            onClick={() => setDropdownOpen(prevState => !prevState)}
+            onClick={() => setDropdownOpen((prevState) => !prevState)}
           />
         </motion.div>
       </div>

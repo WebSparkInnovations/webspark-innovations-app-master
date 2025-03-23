@@ -6,7 +6,7 @@ import { useCallback, useEffect, useState } from 'react';
 export const FlipWords = ({
   words,
   duration = 3000,
-  className,
+  className
 }: {
   words: string[];
   duration?: number;
@@ -37,18 +37,18 @@ export const FlipWords = ({
       <motion.div
         initial={{
           opacity: 0,
-          y: 10,
+          y: 10
         }}
         animate={{
           opacity: 1,
-          y: 0,
+          y: 0
         }}
         transition={{
           duration: 0.4,
           ease: 'easeInOut',
           type: 'spring',
           stiffness: 100,
-          damping: 10,
+          damping: 10
         }}
         exit={{
           opacity: 0,
@@ -56,12 +56,9 @@ export const FlipWords = ({
           x: 40,
           filter: 'blur(8px)',
           scale: 2,
-          position: 'absolute',
+          position: 'absolute'
         }}
-        className={cn(
-          'relative z-10 inline-block px-2 text-left text-neutral-900 dark:text-neutral-100',
-          className
-        )}
+        className={cn('relative z-10 inline-block px-2 text-left text-neutral-900 dark:text-neutral-100', className)}
         key={currentWord}
       >
         {currentWord.split('').map((letter, index) => (
@@ -71,7 +68,7 @@ export const FlipWords = ({
             animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
             transition={{
               delay: index * 0.08,
-              duration: 0.4,
+              duration: 0.4
             }}
             className="inline-block"
           >

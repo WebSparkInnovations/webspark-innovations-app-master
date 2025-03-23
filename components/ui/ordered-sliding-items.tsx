@@ -13,7 +13,7 @@ export const OrderedSlidingItems = ({ items }: OrderedSlidingItemsT) => (
         className={`relative flex flex-col ${(index + 1) % 2 === 1 ? 'lg:flex-row-reverse' : 'lg:flex-row'} items-center justify-evenly gap-x-36 gap-y-10`}
         initial={{
           opacity: 0,
-          translateX: (index + 1) % 2 === 1 ? '40%' : '-40%',
+          translateX: (index + 1) % 2 === 1 ? '40%' : '-40%'
         }}
         whileInView={{ opacity: 1, translateX: 0 }}
         viewport={{ once: true, margin: '-28%' }}
@@ -30,9 +30,7 @@ export const OrderedSlidingItems = ({ items }: OrderedSlidingItemsT) => (
           className="z-10"
         />
         <section className="w-2/3 text-center lg:w-1/3">
-          <h2 className="mb-4 text-4xl font-bold max-lg:text-center">
-            {title}
-          </h2>
+          <h2 className="mb-4 text-4xl font-bold max-lg:text-center">{title}</h2>
           <p className="text-pastelblue md:text-xl">{description}</p>
         </section>
       </motion.div>

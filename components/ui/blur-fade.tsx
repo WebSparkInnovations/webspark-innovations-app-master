@@ -1,10 +1,6 @@
 import { BlurFadeT } from '@/types/blur-fade';
 
-export const BlurFade = ({
-  className,
-  fadeIn = true,
-  fadeOut = true,
-}: BlurFadeT) => (
+export const BlurFade = ({ className, fadeIn = true, fadeOut = true }: BlurFadeT) => (
   <>
     {fadeIn && (
       <div

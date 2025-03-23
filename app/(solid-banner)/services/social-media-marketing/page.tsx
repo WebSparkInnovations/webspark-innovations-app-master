@@ -5,7 +5,7 @@ import banner from '@/assets/images/social-media-marketing/banner.jpeg';
 
 export const metadata: Metadata = {
   title: 'WSI | Social Media Marketing',
-  description: 'WSI Social Media Marketing Page',
+  description: 'WSI Social Media Marketing Page'
 };
 
 const SocialMediaMarketingPage = () => (

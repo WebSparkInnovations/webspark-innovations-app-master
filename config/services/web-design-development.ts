@@ -6,7 +6,7 @@ import { ServicesItemT } from '@/types/services-item';
 export const WEB_DESIGN_DEVELOPMENT_SERVICE: ServicesItemT = {
   main_header: {
     header: 'Website Service Overview',
-    text: 'At WebSpark Innovations, we craft visually stunning, high-converting websites designed to captivate and perform flawlessly.\nExceptional website design and user experience stem from a meticulous process. Every project begins with an in-depth discovery phase to establish the vision, goals, and key milestones. We team up with you to craft a detailed project plan, setting clear approaches and timelines. Our creative brief highlights your brand, personality, competitors, and target audience, ensuring a custom fit for your vision.',
+    text: 'At WebSpark Innovations, we craft visually stunning, high-converting websites designed to captivate and perform flawlessly.\nExceptional website design and user experience stem from a meticulous process. Every project begins with an in-depth discovery phase to establish the vision, goals, and key milestones. We team up with you to craft a detailed project plan, setting clear approaches and timelines. Our creative brief highlights your brand, personality, competitors, and target audience, ensuring a custom fit for your vision.'
   },
   services: [
     {
@@ -18,8 +18,8 @@ export const WEB_DESIGN_DEVELOPMENT_SERVICE: ServicesItemT = {
         'Sitemap & Wireframe Strategy',
         'Content Development & Copywriting',
         'SEO Audit & Implementation',
-        'Photography & Video Services',
-      ],
+        'Photography & Video Services'
+      ]
     },
     {
       src: schema,
@@ -31,8 +31,8 @@ export const WEB_DESIGN_DEVELOPMENT_SERVICE: ServicesItemT = {
         'User Experience (UX) Design',
         'Graphic Design',
         'Image Optimization',
-        'Visual Elements and Graphics',
-      ],
+        'Visual Elements and Graphics'
+      ]
     },
     {
       src: code,
@@ -45,8 +45,8 @@ export const WEB_DESIGN_DEVELOPMENT_SERVICE: ServicesItemT = {
         'Back-End Web Development',
         'E-Commerce Development',
         'Content Management System (CMS) Development',
-        'API Development and Integration',
-      ],
-    },
-  ],
+        'API Development and Integration'
+      ]
+    }
+  ]
 };

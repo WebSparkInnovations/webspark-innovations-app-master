@@ -3,13 +3,7 @@ import { cn } from '@/lib/utils';
 import { motion, stagger, useAnimate } from 'framer-motion';
 import { useEffect } from 'react';
 
-export const TextGenerateEffect = ({
-  words,
-  className,
-}: {
-  words: string;
-  className?: string;
-}) => {
+export const TextGenerateEffect = ({ words, className }: { words: string; className?: string }) => {
   let wordsArray = words.split(' ');
 
   return (

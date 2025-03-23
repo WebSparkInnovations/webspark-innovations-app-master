@@ -3,11 +3,7 @@ import Link from 'next/link';
 import { LiaLongArrowAltRightSolid } from 'react-icons/lia';
 import { buttonVariants } from '../ui/button';
 
-export const HoverCardContent = ({
-  content,
-  layout,
-  setLayout,
-}: HoverCardContentT) => (
+export const HoverCardContent = ({ content, layout, setLayout }: HoverCardContentT) => (
   <article
     className="absolute top-0 z-40 grid h-full w-full items-stretch justify-center divide-x divide-whitelilac-700 text-center"
     style={{ gridTemplateColumns: layout }}
@@ -30,13 +26,10 @@ export const HoverCardContent = ({
             href={href}
             className={buttonVariants({
               variant: 'ghost',
-              className:
-                'group/button overflow-hidden rounded-none hover:gap-x-2 sm:mr-auto',
+              className: 'group/button overflow-hidden rounded-none hover:gap-x-2 sm:mr-auto'
             })}
           >
-            <span className="overflow-hidden transition-[flex] group-hover/button:flex-1 sm:flex-[0]">
-              VIEW
-            </span>
+            <span className="overflow-hidden transition-[flex] group-hover/button:flex-1 sm:flex-[0]">VIEW</span>
             <LiaLongArrowAltRightSolid size={34} />
           </Link>
         </section>

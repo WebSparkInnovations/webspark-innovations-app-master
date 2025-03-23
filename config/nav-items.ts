@@ -3,26 +3,26 @@ import { SERVICES } from './our-services';
 export const NAVITEMS = [
   {
     title: 'Home',
-    href: '/',
+    href: '/'
   },
   {
     title: 'About',
-    href: '/about',
+    href: '/about'
   },
   {
     title: 'Services',
     href: '/',
     elementId: 'services',
-    featured: SERVICES.map(({ title, href }) => ({ title, href })),
+    featured: SERVICES.map(({ title, href }) => ({ title, href }))
   },
   {
     title: 'Industries We Serve',
-    href: '/industries-we-serve',
+    href: '/industries-we-serve'
   },
   {
     title: 'Contact Us',
-    href: '/contact-us',
-  },
+    href: '/contact-us'
+  }
 ];
 
 export enum NavItemsGroup {
@@ -30,5 +30,5 @@ export enum NavItemsGroup {
   ABOUT = '/about',
   SERVICES = '/services',
   INDUSTRIES_WE_SERVE = '/industries-we-serve',
-  CONTACT_US = '/contact-us',
+  CONTACT_US = '/contact-us'
 }

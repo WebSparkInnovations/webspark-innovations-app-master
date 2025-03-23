@@ -3,11 +3,12 @@ import { SocialT } from '@/types/social';
 import React from 'react';
 
 export const Social = ({ className, visibleOnLg, iconSize = 24 }: SocialT) => (
-  <ul
-    className={`gap-x-3 ${visibleOnLg ? 'hidden lg:flex ' : 'flex '} ${className}`}
-  >
+  <ul className={`gap-x-3 ${visibleOnLg ? 'hidden lg:flex ' : 'flex '} ${className}`}>
     {SOCIALS.map(({ icon: Icon, href, title }) => (
-      <li key={title} className="group animate-bump px-1">
+      <li
+        key={title}
+        className="group animate-bump px-1"
+      >
         <a
           title={title}
           href={href}

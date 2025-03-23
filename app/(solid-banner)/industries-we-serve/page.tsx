@@ -3,12 +3,15 @@ import { IndustriesContent } from '@/components/industries/industries-content';
 import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'WSI | Industries Serve',
-  description: 'WSI Industries Serve Page',
+  description: 'WSI Industries Serve Page'
 };
 
 const IndustriesWeServePage = () => (
   <>
-    <ImageBanner banner="/images/banner.jpg" title="Industries We Serve" />
+    <ImageBanner
+      banner="/images/banner.jpg"
+      title="Industries We Serve"
+    />
     <IndustriesContent />
   </>
 );

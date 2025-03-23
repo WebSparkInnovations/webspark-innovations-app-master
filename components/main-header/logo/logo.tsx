@@ -6,7 +6,11 @@ import Link from 'next/link';
 import { LogoScrollOpacityWrapper } from './logo-scroll-opacity-wrapper';
 
 export const Logo = ({ solid }: LogoT) => (
-  <Link href="/" className="relative h-20 w-44" title="WebSpark Home Page">
+  <Link
+    href="/"
+    className="relative h-20 w-44"
+    title="WebSpark Home Page"
+  >
     {!solid && (
       <>
         <LogoScrollOpacityWrapper>

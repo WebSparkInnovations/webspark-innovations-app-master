@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'WSI | Contact Us',
-  description: 'WSI Contact Us Page',
+  description: 'WSI Contact Us Page'
 };
 
 const ContactUsPage = () => <ContactUsContent />;

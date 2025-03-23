@@ -5,7 +5,7 @@ import { ServicesListArticleAnimation } from './services-list-article-animation'
 
 export const ServicesListArticle = ({
   service: { description, title, src, we_provide },
-  index,
+  index
 }: ServicesListArticleT) => (
   <ServicesListArticleAnimation index={index}>
     {src && (
@@ -31,8 +31,11 @@ export const ServicesListArticle = ({
             We Provide
           </h3>
           <ul className="w-max max-w-full whitespace-pre-line rounded-md p-8 shadow-md shadow-zinc-700/60">
-            {we_provide.map(item => (
-              <li key={item} className="flex items-center gap-1">
+            {we_provide.map((item) => (
+              <li
+                key={item}
+                className="flex items-center gap-1"
+              >
                 <GoDotFill size={14} />
                 {item}
               </li>

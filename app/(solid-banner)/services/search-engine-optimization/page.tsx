@@ -5,7 +5,7 @@ import banner from '@/assets/images/search-engine-optimization/banner.jpeg';
 
 export const metadata: Metadata = {
   title: 'WSI | SEO',
-  description: 'WSI SEO Page',
+  description: 'WSI SEO Page'
 };
 
 const SEOPage = () => (

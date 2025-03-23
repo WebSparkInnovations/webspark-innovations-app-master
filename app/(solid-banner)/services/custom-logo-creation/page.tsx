@@ -6,7 +6,7 @@ import { CUSTOM_LOGO_CREATION_SERVICE } from '@/config/services/custom-logo-crea
 
 export const metadata: Metadata = {
   title: 'WSI | Custom Logo Creation',
-  description: 'WSI Custom Logo Creation Page',
+  description: 'WSI Custom Logo Creation Page'
 };
 
 const CustomLogoCreationPage = () => (

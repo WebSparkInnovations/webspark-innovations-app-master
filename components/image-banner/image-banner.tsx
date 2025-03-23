@@ -20,7 +20,10 @@ export function ImageBanner({ banner, title }: ImageBannerT) {
           {words.map((word, index) => {
             if (index === words.length - 1) {
               return (
-                <span key={word + index} className="text-pastelblue-400">
+                <span
+                  key={word + index}
+                  className="text-pastelblue-400"
+                >
                   {word}
                 </span>
               );

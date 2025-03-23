@@ -8,13 +8,16 @@ import { BlurFade } from '../ui/blur-fade';
 export const ServicesListContent = ({
   services: {
     services,
-    main_header: { text, header },
+    main_header: { text, header }
   },
   banner,
-  title,
+  title
 }: ServicesListContentT) => (
   <>
-    <ImageBanner banner={banner} title={title} />
+    <ImageBanner
+      banner={banner}
+      title={title}
+    />
     <header className="w-full overflow-hidden bg-regalblue-300 py-14 text-center">
       <MaxWidthWrapper className="flex flex-col gap-8">
         <h2 className="flex items-center justify-center gap-4 text-lg italic text-cyan-400">
@@ -29,7 +32,10 @@ export const ServicesListContent = ({
       <ul className="flex w-full flex-col overflow-hidden">
         {services.map((item, index) => (
           <li key={item.title}>
-            <ServicesListArticle service={item} index={index} />
+            <ServicesListArticle
+              service={item}
+              index={index}
+            />
           </li>
         ))}
       </ul>

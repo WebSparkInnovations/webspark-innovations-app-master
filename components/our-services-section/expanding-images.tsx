@@ -5,7 +5,7 @@ export const ExpandingImages = ({ images, layout }: ExpandingImagesT) => (
     className="grid h-full w-full overflow-hidden transition-all duration-500"
     style={{ gridTemplateColumns: layout }}
   >
-    {images.map(image => (
+    {images.map((image) => (
       <li
         key={image.src}
         className="relative z-40 h-full w-full bg-cover bg-center bg-no-repeat"

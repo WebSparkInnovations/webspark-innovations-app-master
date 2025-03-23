@@ -5,7 +5,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'WSI | Web Design Development',
-  description: 'WSI Web Design Development Page',
+  description: 'WSI Web Design Development Page'
 };
 
 const WebDesignDevelopmentPage = () => (

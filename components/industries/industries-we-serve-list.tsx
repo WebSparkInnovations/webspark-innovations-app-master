@@ -8,7 +8,10 @@ export const IndustriesWeServeList = () => (
         className="rounded-md border-4 border-regalblue-700 px-4 py-5 text-center transition-all duration-300 hover:scale-110 hover:bg-white"
       >
         <article className="flex flex-col gap-10">
-          <Icon className="" size={34} />
+          <Icon
+            className=""
+            size={34}
+          />
           <section className="flex flex-col gap-2">
             <h1 className="text-4xl">{title}</h1>
             <p>{description}</p>

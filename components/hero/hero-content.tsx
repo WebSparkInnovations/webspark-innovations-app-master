@@ -5,8 +5,7 @@ import { FlipWords } from '../ui/flip-words';
 import { MaxWidthWrapper } from '../ui/max-width-wrapper';
 
 const words = ['Spark', 'Boost', 'Momentum', 'Inspiration'];
-const className =
-  'bg-gradient-to-b from-whitelilac to-regalblue-50 bg-clip-text';
+const className = 'bg-gradient-to-b from-whitelilac to-regalblue-50 bg-clip-text';
 
 export const HeroContent = () => (
   <MaxWidthWrapper className="space-y-14">
@@ -14,7 +13,10 @@ export const HeroContent = () => (
       <h1 className="w-full text-5xl text-transparent drop-shadow sm:text-7xl">
         <span className={className}>The </span>
         <strong>
-          <FlipWords words={words} className="text-regalblue-400 drop-shadow" />
+          <FlipWords
+            words={words}
+            className="text-regalblue-400 drop-shadow"
+          />
         </strong>
         <br />
         <span className={className}>To Your Business</span>

@@ -7,12 +7,9 @@ export const OurProcess = () => (
   <div className="relative flex w-full flex-col items-center justify-center gap-y-14 bg-ellipse from-[#111] from-25% to-black to-45% px-2.5 py-20 text-white lg:px-5 [&>*]:z-30">
     <article className="space-y-6 text-center">
       <section className="flex flex-col gap-y-4">
-        <h2 className="text-2xl font-bold text-pastelblue">
-          NEXT LEVEL WEBSITE DESIGN IN PHILADELPHIA
-        </h2>
+        <h2 className="text-2xl font-bold text-pastelblue">NEXT LEVEL WEBSITE DESIGN IN PHILADELPHIA</h2>
         <p className="text-center text-lg text-pastelblue">
-          WebSpark Innovations is a global multidisciplinary design company. We bring a
-          deep tech approach to design.
+          WebSpark Innovations is a global multidisciplinary design company. We bring a deep tech approach to design.
         </p>
         <TextGradientLines />
       </section>

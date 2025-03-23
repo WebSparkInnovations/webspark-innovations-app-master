@@ -29,8 +29,7 @@ export const Footer = () => (
             href={NavItemsGroup.CONTACT_US}
             className={buttonVariants({
               variant: 'link',
-              className:
-                'text-center !text-2xl !font-bold text-whitelilac decoration-2',
+              className: 'text-center !text-2xl !font-bold text-whitelilac decoration-2'
             })}
             role="heading"
             aria-level={1}
@@ -60,8 +59,7 @@ export const Footer = () => (
         </div>
         <div className="text-center">
           <p className="text-xs">
-            &copy; {new Date().getFullYear()}{' '}
-            <strong>WebSpark Innovations</strong> All rights reserved.
+            &copy; {new Date().getFullYear()} <strong>WebSpark Innovations</strong> All rights reserved.
           </p>
         </div>
       </article>
